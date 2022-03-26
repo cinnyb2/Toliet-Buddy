@@ -1,4 +1,10 @@
 {
+  "name": "OhShit",
+
+  "scripts": {
+    "serve": "firebase emulators:start",
+    "deploy": "firebase deploy"
+  },
   "dependencies": {
     "firebase": "^9.6.10"
   }
