@@ -8,6 +8,7 @@ import streamlit as st
 
 
 def init_google_nlp(local=False):
+
     if local == True:
         load_dotenv()
         GOOGLE_SERVICE_KEY = os.environ.get("GOOGLE_SERVICE_KEY")
@@ -22,10 +23,7 @@ def init_google_nlp(local=False):
 
 def google_nlp(text, explain=False):
 
-    # use this if you're on local machine
-    # client = init_google_nlp(local=True)
-
-    client = init_google_nlp(local=False)
+    client = init_google_nlp(local=True)
 
     document = language_v1.Document(
         content=text, type_=language_v1.Document.Type.PLAIN_TEXT
