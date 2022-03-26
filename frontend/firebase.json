@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "frontend/public",
+    "public": "public",
+
+    "cleanUrls": true,
+    "trailingSlash": false,
+
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "package-lock.json",
+      "package.json"
     ]
   }
 }
