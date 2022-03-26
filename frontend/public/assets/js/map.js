@@ -1,13 +1,5 @@
 // Initialize and add the map
 
-import { Loader } from '@googlemaps/js-api-loader';
-
-const loader = new Loader({
-  apiKey: process.env.GC_API_KEY,
-  version: 'weekly',
-  ...additionalOptions,
-});
-
 let map;
 const SAN_FRANCISCO_BOUNDS = {
   north: 37.84,
@@ -37,16 +29,14 @@ function addMarker(lat, lng, title) {
 }
 
 function initMap() {
-  loader.load().then(() => {
-    map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: SAN_FRANCISCO,
-      restriction: {
-        latLngBounds: SAN_FRANCISCO_BOUNDS,
-        strictBounds: false,
-      },
-      styles: myStyles,
-    });
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: SAN_FRANCISCO,
+    restriction: {
+      latLngBounds: SAN_FRANCISCO_BOUNDS,
+      strictBounds: false,
+    },
+    styles: myStyles,
   });
 
   addMarker(37.7882589, -122.4104123, 'Market/Powell');
