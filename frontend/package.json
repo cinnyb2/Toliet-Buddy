@@ -1,11 +1,11 @@
 {
   "name": "OhShit",
-
   "scripts": {
     "serve": "firebase emulators:start",
     "deploy": "firebase deploy"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "firebase": "^9.6.10"
   }
 }
