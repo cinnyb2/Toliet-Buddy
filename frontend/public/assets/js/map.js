@@ -20,7 +20,7 @@ function addInfoWindow(marker, message) {
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
   var myLatlng = new google.maps.LatLng(lat, lng);
-  var markerIcon = 'assets/png/toiletpaper.png';
+  var markerIcon = 'assets/png/new-pin.png';
 
   let marker = new google.maps.Marker({
     position: myLatlng,
