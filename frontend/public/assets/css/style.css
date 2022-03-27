@@ -47,3 +47,16 @@ img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+
+img {
+  width: 8%;
+  height: auto;
+}
+
+#navbarNav {
+  width: 30%;
+}
