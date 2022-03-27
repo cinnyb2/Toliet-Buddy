@@ -13,8 +13,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/map.css" />
-
     <link rel="shortcut icon" href="#" />
 
     <link
@@ -41,10 +39,6 @@
         padding: 10%;
       }
 
-      #loc_map {
-        height: 100%;
-      }
-
       .form-group label {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -58,74 +52,116 @@
         padding: 0;
       }
 
-      body {
-        margin: 20px;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 8px;
-      }
-
       .Ratings {
         float: left;
       }
 
-      /* star css */
-
-      .rating {
-        border: none;
-        float: left;
+      .navbar-nav .nav-item:hover {
+        background-color: rgba(180, 190, 203, 0.4);
       }
 
-      .rating > input {
-        display: none;
+      img {
+        width: 8%;
+        height: auto;
+        position: relative;
+        left: 10px;
       }
 
-      .rating > label:before {
-        margin: 5px;
-        font-size: 1.25em;
-        font-family: FontAwesome;
-        display: inline-block;
-        content: '\f005';
+      #navbarNav {
+        width: 30%;
       }
 
-      .rating > .half:before {
-        content: '\f089';
-        position: absolute;
+      html,
+      body {
+        margin: 0;
+        padding: 0;
       }
 
-      .rating > label {
-        color: #ddd;
-        float: right;
-      }
-
-      /***** CSS Magic to Highlight Stars on Hover *****/
-
-      .rating>input:checked~label,
-        /* show gold star when clicked */
-        .rating:not(:checked)>label:hover,
-        /* hover current star */
-        .rating:not(:checked)>label:hover~label {
+      /* star css .rating {
+                border: none;
+                float: left;
+              }
+              .rating > input {
+                display: none;
+              }
+              .rating > label:before {
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005";
+              }
+              .rating > .half:before {
+                content: "\f089";
+                position: absolute;
+              }
+              .rating > label {
+                color: #ddd;
+                float: right;
+              }
+              /***** CSS Magic to Highlight Stars on Hover *****/
+      /*
+              .rating>input:checked~label,
+                /* show gold star when clicked */
+      .rating:not(:checked)>label:hover,
+      /* hover current star */
+      .rating:not(:checked)>label:hover~label {
         color: #ffd700;
       }
 
       /* hover previous stars in list */
 
       .rating>input:checked+label:hover,
-        /* hover current star when changing rating */
-        .rating>input:checked~label:hover,
-        .rating>label:hover~input:checked~label,
-        /* lighten current selection */
-        .rating>input:checked~label:hover~label {
+      /* hover current star when changing rating */
+      .rating>input:checked~label:hover,
+      .rating>label:hover~input:checked~label,
+      /* lighten current selection */
+      .rating>input:checked~label:hover~label {
         color: #ffed85;
       }
+
+      */
     </style>
 
-    <script src="./assets/js/find_loc.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB8bR22FPAkaeDEwexa1JXOX86zKFqPpo&callback=find_loc_map&v=weekly"
+    ></script>
+    <script src="./assets/js/map.js"></script>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">
+        <img style="width: 8%" src="./assets/png/Logo-white.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-sm-auto gap-2">
+          <li class="nav-item rounded">
+            <a class="nav-link active" aria-current="page" href="./message.html"
+              >Toilets near me</a
+            >
+          </li>
+          <li class="nav-item rounded">
+            <a class="nav-link" href="./submit.html"
+              ><i class="bi bi-people-fill me-2"></i>Review a toilet</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div id="form">
       <header>
         <h1>Add a review to a toilet</h1>
@@ -217,9 +253,7 @@
         </fieldset>
         <br />
       </div> -->
-      <<<<<<< HEAD =======
       <div id="loc_map"></div>
-      >>>>>>> e1d32d33377687b8d76c1a672ec876b597e2ca50
 
       <div class="form-group">
         <label for="title">Location</label>
@@ -231,11 +265,6 @@
           placeholder="location"
         />
       </div>
-      <<<<<<< HEAD
-
-      <div id="loc_map"></div>
-
-      ======= >>>>>>> e1d32d33377687b8d76c1a672ec876b597e2ca50
       <div class="form-group">
         <label for="review">Review</label>
         <textarea
@@ -259,12 +288,5 @@
       <br />
       <button class="btn btn-primary" onclick="addToilet()">Submit</button>
     </div>
-    <<<<<<< HEAD
-
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB8bR22FPAkaeDEwexa1JXOX86zKFqPpo&callback=initMap&v=weekly"
-    ></script>
-    ======= >>>>>>> e1d32d33377687b8d76c1a672ec876b597e2ca50
   </body>
 </html>
