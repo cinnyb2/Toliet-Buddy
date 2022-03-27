@@ -1,9 +1,3 @@
-#map {
-  height: 100%;
-  width: 100%;
-  /* The width is the width of the web page */
-}
-
 .container {
   padding-top: 3%;
   text-align: center;
@@ -43,4 +37,13 @@ img {
 
 .button-container {
   text-align: center;
+}
+
+#form {
+  padding: 10%;
+}
+
+.form-group label {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
