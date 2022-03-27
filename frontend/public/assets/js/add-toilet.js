@@ -30,10 +30,6 @@ function addToilet() {
     document.getElementById("review").value = "";
     document.getElementById("ratings").value = "1";
     document.getElementById("location").value = "";
-
-    alert(
-        "Thank you. We will review and post your submission as fast as possible."
-    );
 }
 // async function addToilet(url = BASE_URL, data = {}) {
 //   const response = await fetch(
