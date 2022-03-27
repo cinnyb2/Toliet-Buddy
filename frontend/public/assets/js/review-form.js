@@ -5,7 +5,7 @@ function saveReview() {
 
   try {
     fetch(
-      `/form_submit?location=${location}&title=${title}&text=${review}&rating=${ratings}`,
+      `http://127.0.0.1:8000/form_submit?location=${location}&title=${title}&text=${review}&rating=${ratings}`,
       {
         method: 'POST',
         body: data,
