@@ -6,22 +6,22 @@
 a,
 a:focus,
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: 0.05rem solid #fff;
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
 }
 
 .btn-secondary:hover {
-    /* background-color:rgb(100, 162, 255); */
-    background-color: #aadaff;
-    border: 0.05rem solid #aadaff;
+  /* background-color:rgb(100, 162, 255); */
+  background-color: #aadaff;
+  border: 0.05rem solid #aadaff;
 }
 
 /*
@@ -29,86 +29,87 @@ a:hover {
  */
 
 html {
-    height: 100%;
-    /* background-color: rgb(155, 155, 155); */
-    /* background-image: url(../jpg/japan_toilet.jpg); */
+  height: 100%;
+  /* background-color: rgb(155, 155, 155); */
+  /* background-image: url(../jpg/japan_toilet.jpg); */
 }
 
 body {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-pack: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-    background-image: url(../jpg/japan_toilet.jpg);
-    background-size: cover;
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  background-image: url(../jpg/japan_toilet.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 /*
  * Header
  */
 .masthead {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .masthead-brand {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav-masthead .nav-link {
-    padding: 0.25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-    border-bottom: 0.25rem solid transparent;
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 @media (min-width: 48em) {
-    .masthead-brand {
-        float: left;
-    }
-    .nav-masthead {
-        float: right;
-    }
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
 }
 
 /*
  * Cover
  */
 .cover {
-    padding: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 .cover .btn-lg {
-    padding: 0.75rem 1.25rem;
-    font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
 }
 .cover-heading {
-    display: block;
-    width: 40vw;
-    margin: auto;
+  display: block;
+  width: 40vw;
+  margin: auto;
 }
 
 /*
  * Footer
  */
 .mastfoot {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
