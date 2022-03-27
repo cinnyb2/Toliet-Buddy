@@ -20,13 +20,6 @@
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
-    <!-- Firebase 8 related JS CDN -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-
     <!-- Link to the api keys for your Firebase project -->
     <script src="./assets/js/messages.js"></script>
 
@@ -44,22 +37,43 @@
   <body>
     <div id="form">
       <header>
-        <h1>Add your number</h1>
+        <h1>Get a message about toilets near you!</h1>
       </header>
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Your Name</label>
         <br />
         <input
           type="text"
           class="form-control-lg"
-          id="title"
-          placeholder="Title"
+          id="user_name"
+          placeholder="John Doe"
+        />
+      </div>
+      <div class="form-group">
+        <label for="title">Your Location</label>
+        <br />
+        <input
+          type="text"
+          class="form-control-lg"
+          id="loc"
+          placeholder="123 St"
+        />
+      </div>
+      <div class="form-group">
+        <label for="title">Phone Number</label>
+        <br />
+        <input
+          type="text"
+          class="form-control-lg"
+          id="phone_num"
+          placeholder=""
         />
       </div>
 
-      </div>
+ 
       <br />
-      <button class="btn btn-primary" onclick="saveReview()">Submit</button>
+      <button class="btn btn-primary" onclick="contactMe()">Submit</button>
+    </div>
     </div>
   </body>
 </html>

@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["http://localhost:5000"]
+origins = ["http://localhost:5000", "http://35.203.34.201:8080/"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -46,6 +46,7 @@ async def get_locations():
             doc_info["latitude"],
             doc_info["longitude"],
             doc_info["location"],
+            doc_info["remarks"],
         ]
 
     return loc_dicts
@@ -101,7 +102,9 @@ async def verify_code(client, code: str, to_phone: str):
 
 
 @app.post("/send_mes")
-async def send_mes(to_phone, name, message):
+async def send_mes(to_phone, name, loc, message=""):
+
+    # code to find find nearest toilets
 
     message = f" Hey {name}! Nature calls? There are 10 toilets within 100m from your location!"
 
