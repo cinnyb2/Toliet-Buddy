@@ -46,6 +46,7 @@ async def get_locations():
             doc_info["latitude"],
             doc_info["longitude"],
             doc_info["location"],
+            doc_info["remarks"]
         ]
 
     return loc_dicts
