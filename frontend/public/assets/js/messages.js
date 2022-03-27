@@ -1,5 +1,5 @@
 function contactMe() {
-  const BASE_URL = 'http://127.0.0.1:8000/send_mes?';
+  const BASE_URL = 'http://35.203.34.201:8000/send_mes?';
   phone_num = document.getElementById('phone_num').value;
   user_name = document.getElementById('user_name').value;
   loc = document.getElementById('loc').value;

@@ -3,7 +3,6 @@
 let map; // global map variable
 var gmarkers = []; // store marker variables
 
-
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
   var myLatlng = new google.maps.LatLng(lat, lng);
@@ -23,9 +22,9 @@ function addMarker(lat, lng, title, description) {
     maxWidth: 150,
   });
 
-  marker.addListener("click", () => {
+  marker.addListener('click', () => {
     infowindow.open({
-      anchor:marker,
+      anchor: marker,
       map,
       shouldFocus: true,
     });

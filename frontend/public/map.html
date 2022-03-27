@@ -24,13 +24,6 @@
             crossorigin="anonymous"
         />
 
-        <!-- Firebase 8 related JS CDN -->
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-
         <script src="./assets/js/map.js"></script>
     </head>
 
@@ -120,10 +113,13 @@
         <div id="map"></div>
 
         <!-- API key -->
-        <script async src="./assets/js/googlemap.js"></script>
+        <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB8bR22FPAkaeDEwexa1JXOX86zKFqPpo&callback=initMap&v=weekly"
+        ></script>
+        <!-- <script async src="./assets/js/googlemap.js"></script> -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="custom.js"></script>
     </body>
 </html>
