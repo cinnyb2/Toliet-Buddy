@@ -12,8 +12,9 @@ function addInfoWindow(marker, message) {
 
   google.maps.event.addListener(marker, 'click', function() {
     infoWindow.open(map, marker);
-  }
+  });
 }
+
 
 
 function addMarker(lat, lng, title, description) {
@@ -24,16 +25,25 @@ function addMarker(lat, lng, title, description) {
   let marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
-    title: 'Test Bathroom',
     icon: markerIcon
   });
-
-
 
   // Save markers for sidebar later
   gmarkers.push(marker);
 
+  let info_window = new google.maps.InfoWindow({
+    content: "test"
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+
+  });
+
+
+
   }
+
+
 
 
 // INITIALIZE MAP //
@@ -66,4 +76,5 @@ function initMap() {
   });
 
   addMarker(37.7882589, -122.4104123, 'Market/Powell');
+
 }
