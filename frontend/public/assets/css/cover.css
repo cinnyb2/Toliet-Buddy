@@ -103,6 +103,11 @@ body {
   padding: 0.75rem 1.25rem;
   font-weight: 700;
 }
+.cover-heading {
+  display: block;
+  width: 50vw;
+  margin: auto;
+}
 
 /*
  * Footer
