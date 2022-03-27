@@ -1,35 +1,39 @@
 function addToilet() {
-  const BASE_URL = 'http://127.0.0.1:8000/form_submit?';
+    const BASE_URL = "http://127.0.0.1:8000/form_submit?";
 
-  const title = document.getElementById('title').value;
-  const ratings = document.getElementById('ratings').value;
-  const location = document.getElementById('location').value;
-  const review = document.getElementById('review').value;
+    const title = document.getElementById("title").value;
+    const ratings = document.getElementById("ratings").value;
+    const location = document.getElementById("location").value;
+    const review = document.getElementById("review").value;
 
-  try {
-    fetch(
-      BASE_URL +
-        `location=${location}&title=${title}&text=${review}&rating=${ratings}`,
-      {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: { location, title, review, ratings }, // body data type must match "Content-Type" header
-      }
-    ).then(function (res) {
-      alert('Thanks for submitting!');
-    });
-  } catch (error) {
-    console.log(error.message);
-  }
+    try {
+        fetch(
+            BASE_URL +
+                `location=${location}&title=${title}&text=${review}&rating=${ratings}`,
+            {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                mode: "no-cors", // no-cors, *cors, same-origin
+                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: { location, title, review, ratings }, // body data type must match "Content-Type" header
+            }
+        ).then(function (res) {
+            alert("Thanks for submitting!");
+        });
+    } catch (error) {
+        console.log(error.message);
+    }
 
-  document.getElementById('title').value = '';
-  document.getElementById('review').value = '';
-  document.getElementById('ratings').value = '1';
-  document.getElementById('location').value = '';
+    document.getElementById("title").value = "";
+    document.getElementById("review").value = "";
+    document.getElementById("ratings").value = "1";
+    document.getElementById("location").value = "";
+
+    alert(
+        "Thank you. We will review and post your submission as fast as possible."
+    );
 }
 // async function addToilet(url = BASE_URL, data = {}) {
 //   const response = await fetch(
