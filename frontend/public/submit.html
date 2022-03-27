@@ -114,6 +114,13 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB8bR22FPAkaeDEwexa1JXOX86zKFqPpo&callback=find_loc_map&v=weekly"
         ></script>
         <script src="./assets/js/map.js"></script>
+
+        <style>
+            #form {
+                padding: 10%;
+                padding-top: 0;
+            }
+        </style>
     </head>
 
     <body>
@@ -169,11 +176,12 @@
                 </ul>
             </div>
         </nav>
-
+        <header>
+            <h1 style="text-align: center; padding-top: 5%">
+                Add a new bathroom
+            </h1>
+        </header>
         <div id="form">
-            <header>
-                <h1>Add a new bathroom</h1>
-            </header>
             <div class="form-group">
                 <label for="title">Title</label>
                 <br />
@@ -270,7 +278,7 @@
                     type="text"
                     class="form-control"
                     id="location"
-                    placeholder="location"
+                    placeholder="Enter location"
                 />
             </div>
             <div class="form-group">
