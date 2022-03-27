@@ -1,10 +1,8 @@
 function saveReview() {
-    //get user's changes
     title = document.getElementById("title").value;
     review = document.getElementById("review").value;
     ratings = document.getElementById("ratings").value;
 
-    //console.log(title + review + ratings);
     try {
         db.collection("review")
             .add({
@@ -18,4 +16,8 @@ function saveReview() {
     } catch (error) {
         console.log(error.message);
     }
+
+    document.getElementById("title").value = "";
+    document.getElementById("review").value = "";
+    document.getElementById("ratings").value = "1";
 }
