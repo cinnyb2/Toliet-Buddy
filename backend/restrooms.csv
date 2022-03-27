@@ -1,0 +1,64 @@
+location,supervisory_district,zip,jurisdiction,hours_monday,hours_tuesday,hours_wednesday,hours_thursday,hours_friday,hours_saturday,hours_sunday,remarks,latitude,longitude
+Market/Powell,6,94102,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Free entry,37.7882589,-122.4104123
+Market/7th (U. N. Plaza),6,94102,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Free entry,47.682012,-122.212155
+Grove/Larkin (Civic Center),6,94102,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7917254,-122.4192648
+Eddy/Jones,6,94102,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Free entry,44.7482912,-68.32605199999999
+Ellis/O'Farrell Garage-123 O'Farrell,6,94102,Parking Authority,5:30am-1am,5:30am-1am,5:30am-1am,5:30am-1am,5:30am-2am,5:30am-2am,5:30am-1am,Currently patrons only,37.7860913,-122.4071283
+Union Square Garage-333 Post St.,6,94102,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Currently patrons only,37.7879259,-122.4075134
+City Hall-1 Dr. Carlton Goodlett Pl.,6,94102,Public Building,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,11am-4pm,closed,,37.7792719,-122.4192288
+Civic Center Court House - 400 McCallister,6,94102,Public Building,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,,37.7806561,-122.418008
+Hayes Valley Playground-Hayes/Buchanan,5,94102,Rec. & Park,9am-6pm,9am-6pm,9am-6pm,9am-6pm,1-10pm,11am-5pm,,,37.7760376,-122.4274364
+Tenderloin Rec. Center-Ellis/Leavenworth,6,94102,Rec. & Park,9am-9pm,9am-9pm,9am-9pm,9am-9pm,9am-9pm,9am-6pm,12-5pm,,47.5962326,-120.6614765
+Lyon-Martin Women Health Ctr.-1748 Market St.,6,94102,SF Health Dept.,8:30am-5pm,8:30am-5pm,8:30am-7:30pm,8:30am-5pm,8:30am-5pm,closed,closed,,45.764043,4.835659
+Main Library-100 Larkin St.,6,94102,SF Public Library,10am-6pm,9am-8pm,9am-8pm,9am-8pm,12pm-6pm,10am-6pm,12pm-5pm,,37.7792824,-122.4158576
+5th/Mission Garage-833 Mission St.,6,94103,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7832966,-122.4052064
+Moscone Center Garage-255 Third St.,6,94103,Parking Authority,6am-12am,6am-12am,6am-12am,6am-12am,6am-2:30am,7:30am-2:30am,7:30am-12am,Currently employee only,37.7846827,-122.3993929
+1660 Mission/Otis,6,94103,Parking Authority,7am-6pm,7am-6pm,7am-6pm,7am-6pm,7am-6pm,closed,closed,Currently patrons only,37.7719614,-122.4201857
+Moscone Center-747 Howard,6,94103,Public Building,event hours,event hours,event hours,event hours,event hours,event hours,event hours,,37.7838391,-122.4005464
+SOMA Rec. Center-6th St./Folsom,6,94103,Rec. & Park,9am-10pm,9am-10pm,9am-10pm,9am-10pm,9am-10pm,9am-6pm,11am-5pm,,39.572187,-74.801332
+South of Market Health Ctr.-551 Minna St.,6,94103,SF Health Dept.,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,closed,closed,,37.7785189,-122.4056395
+Embarcadero/Harrison,6,94105,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7895,-122.2578215
+Jackson Playground-17th St/ Arkansas,10,94107,Rec. & Park,9am-10pm,9am-10pm,9am-10pm,9am-10pm,9am-10pm,9am-6pm,9am-6pm,,35.20105,-91.8318334
+Potrero-1616 20th St.,10,94107,SF Public Library,closed,10am-8pm,12pm-8pm,10am-6pm,1pm-6pm,1pm-6pm,closed,,37.7600724,-122.3976728
+Geary/Powell (Union Square),6,94108,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.787464,-122.408322
+Sutter/Stockton Garage-444 Stockton St.,3,94108,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Currently patrons only,37.78978480000001,-122.4069833
+Portsmouth Square Garage-733 Kearny St.,3,94108,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7948871,-122.4052015
+St. Marys Square Garage-433 Kearny,3,94108,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Currently patrons only,37.7921668,-122.4046041
+Chinese Playground-Sacramento/Stockton,3,94108,Rec. & Park,1:30pm-9pm,2:30pm-9pm,2:30pm-9pm,2:30pm-9pm,2:30pm-9pm,9am-6pm,11am-5pm,,37.9577016,-121.2907796
+Portsmouth Square 1-Kearny/Clay,3,94108,Rec. & Park,6am-11pm,6am-11pm,6am-11pm,6am-11pm,6am-11pm,6am-11pm,6am-11pm,,50.816667,-1.083333
+Portsmouth Square 2-Kearny/Clay,3,94108,Rec. & Park,10am-5pm,10am-5pm,10am-5pm,10am-5pm,10am-5pm,10am-5pm,10am-5pm,,50.816667,-1.083333
+St. Mary's Square-California/Kearny,3,94108,Rec. & Park,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,Under construction,37.7921668,-122.4046041
+Chinatown-1135 Powell,3,94108,SF Public Library,1pm-9pm,10am-9pm,10am-9pm,10am-6pm,1pm-6pm,10am-6pm,1pm-5pm,,45.501435,-122.6535355
+Larkin/Myrtle,6,94109,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Free entry,43.6471485,-84.2628659
+Polk Bush-1399 Bush St.,3,94109,Parking Authority,7:30am-12am,7:30am-12am,7:30am-12am,7:30am-12am,8:30am-2am,8:30am-2am,11am-12am,Currently patrons only,37.7884828,-122.4200512
+Lafayette Park-Washington/Gough,2,94109,Rec. & Park,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,7am-3:30pm,,30.2240897,-92.0198427
+Mission/24th St.,9,94110,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,26.2317284,-98.33482079999999
+Mission/16th St.,6,94110,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,26.2216465,-98.3235693
+So. Van Ness/Cesar Chavez,9,94110,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.74830499999999,-122.415756
+Mission Bartlett-3255 21st St.,9,94110,Parking Authority,6:30am-12am,6:30am-12am,6:30am-12am,6:30am-12am,6:30am-2am,6:30am-2am,8:30am-12am,Portable,37.7568497,-122.4203843
+SF General Hospital-2501 23rd St.,9,94110,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7749295,-122.4194155
+Bernal Heights-Bernal Heights/Folsom,9,94110,Rec. & Park,11:30am-8:30pm,11:30am-8:30pm,11:30am-8:30pm,11:30am-8:30pm,11:30am-8:30pm,9am-6pm,closed,,37.7430814,-122.4152169
+Jose Coronado P/G-21st/Folsom,9,94110,Rec. & Park,10am -10pm,10am -10pm,10am -10pm,10am -10pm,10am -10pm,9am-6pm,9am-6pm,,38.6779591,-121.1760583
+Mission P/G-19th St./Valenica,9,94110,Rec. & Park,10am-10pm,10am-10pm,10am-10pm,10am-10pm,10am-10pm,9am-6pm,9am-6pm,,37.760097,-122.421435
+Mission Neighborhood Health Ctr.-240 Shotwell,6,94110,SF Health Dept.,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,closed,closed,,37.7645764,-122.4165857
+San Francisco General Hospital,9,94110,SF Health Dept.,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,,,,37.7554053,-122.4046254
+Bernal Heights-500 Cortland Ave.,9,94110,SF Public Library,closed,10am-9pm,1pm-9pm,10am-6pm,1pm-6pm,1pm-6pm,closed,,37.7388538,-122.4160907
+Mission-300 Bartlett St.,9,94110,SF Public Library,1pm-9pm,10am-9pm,10am-9pm,10am-6pm,1pm-6pm,10am-6pm,1pm-5pm,,37.7519877,-122.4198969
+Market/California/Davis,3,94111,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7961921,-122.3981801
+Pier 7,3,94111,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,39.2715339,-76.5722394
+Clay/Drumm,3,94111,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Free entry,39.8222493,-93.2105574
+Golden Gateway Garage-250 Clay,3,94111,Parking Authority,4am-12am,4am-12am,4am-12am,4am-12am,4am-2am,9am-2am,9am-10pm,Currently patrons only,37.7956823,-122.3984038
+City College-50 Phelan,7,94112,Public Building,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-5pm,closed,closed,,37.725819,-122.4511146
+Excelsior-Russia/Madrid,11,94112,Rec. & Park,9am-10 pm,9am-10 pm,9am-10 pm,9am-10 pm,9am-10 pm,10am-4pm,closed,,40.4167754,-3.7037902
+Oceanview-Capital/Montana,11,94112,Rec. & Park,9:30am-8:30pm,9:30am-8:30pm,9:30am-8:30pm,9:30am-8:30pm,9:30am-8:30pm,9am-5pm,12pm-5:pm,,34.0375924,-118.5383585
+Excelsior-4400 Mission,11,94112,SF Public Library,1pm-9pm,10am-9pm,10am-9pm,10am-6pm,1pm-6pm,10am-6pm,1pm-5pm,,37.7271281,-122.4333694
+Ingleside-1649 Ocean Ave.,11,94112,SF Public Library,closed,10am-6pm,12pm-8pm,12pm-6pm,1pm-6pm,1pm-6pm,closed,,37.7244495,-122.4600906
+Jefferson/Powell (Fisherman's Wharf),3,94113,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.808594,-122.413357
+Jefferson/Powell (Fisherman's Wharf),3,94113,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.808594,-122.413357
+Coit Tower,3,94113,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.8023949,-122.4058222
+Vallejo Street Garage-766 Vallejo St.,3,94113,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,Currently employee only,38.1040864,-122.2566367
+North Beach-735 Vallejo St.,3,94113,Parking Authority,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,currently employee only,37.798284,-122.4096166
+North Beach PG-Powell/Lombard,3,94113,Rec. & Park,7am-7pm,7am-9pm,7am-9pm,7am-9pm,7am-9pm,7am-9pm,7am-9pm,,41.8800296,-88.00784349999999
+North Beach Pool-Powell/Lombard,3,94113,Rec. & Park,6am-9pm,6am-9pm,6am-9pm,6am-9pm,6am-9pm,6am-9pm,6am-9pm,,41.8800296,-88.00784349999999
+Washington Square-Union/Columbus,3,94113,Rec. & Park,6am-2:30am,6am-2:30am,6am-2:30am,6am-2:30am,6am-2:30am,6am-2:30am,6am-2:30am,,40.0692373,-83.12861559999999
+Market/Castro/17th St.,8,94114,DPW/DeCaux,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,24 hours,,37.7624932,-122.4349706
