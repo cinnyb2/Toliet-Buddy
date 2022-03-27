@@ -101,7 +101,9 @@ async def verify_code(client, code: str, to_phone: str):
 
 
 @app.post("/send_mes")
-async def send_mes(to_phone, name, message):
+async def send_mes(to_phone, name, loc, message=""):
+
+    # code to find find nearest toilets
 
     message = f" Hey {name}! Nature calls? There are 10 toilets within 100m from your location!"
 
