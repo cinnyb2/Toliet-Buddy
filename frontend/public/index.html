@@ -19,39 +19,90 @@
             crossorigin="anonymous"
         />
         <link href="./assets/css/cover.css" rel="stylesheet" />
+        <style>
+            .navbar-nav .nav-item:hover {
+                background-color: rgba(180, 190, 203, 0.4);
+            }
+
+            img {
+                width: 8%;
+                height: auto;
+                float: left;
+            }
+
+            #navbarNav {
+                width: 30%;
+            }
+            .navbar-brand {
+                display: inline-block;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+        </style>
     </head>
 
     <body class="text-center">
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <div class="inner">
-                    <h3 class="masthead-brand">Toilet Buddy</h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="/map">Map</a>
-                        <a class="nav-link" href="/submit">Submission</a>
-                    </nav>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">
+                    <img
+                        style="width: 8%"
+                        src="./assets/png/Logo-white.png"
+                        alt=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-sm-auto gap-2">
+                        <li class="nav-item rounded">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="./message.html"
+                                >Toilets near me</a
+                            >
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link" href="./submit.html"
+                                ><i class="bi bi-people-fill me-2"></i>Review a
+                                toilet</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </header>
+            </nav>
+            <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+                <main role="main" class="inner cover" style="padding: 10%">
+                    <h1 class="cover-heading">Toilet Buddy</h1>
+                    <p class="lead">
+                        Keeping cities clean and finding restrooms a breeze.
+                    </p>
+                    <p class="lead">
+                        <a href="/map" class="btn btn-lg btn-secondary"
+                            >Find a Toilet</a
+                        >
+                    </p>
+                </main>
 
-            <main role="main" class="inner cover">
-                <h1 class="cover-heading">Toilet Buddy</h1>
-                <p class="lead">
-                    Keeping cities clean and finding restrooms a breeze.
-                </p>
-                <p class="lead">
-                    <a href="/map" class="btn btn-lg btn-secondary"
-                        >Find a Toilet</a
-                    >
-                </p>
-            </main>
-
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <p>Created with ❤️ for Hoohacks 2022</p>
-                    <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
-                </div>
-            </footer>
+                <footer class="mastfoot mt-auto">
+                    <div class="inner">
+                        <p>Created with ❤️ for Hoohacks 2022</p>
+                        <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+                    </div>
+                </footer>
+            </div>
         </div>
 
         <!-- <div class="container">

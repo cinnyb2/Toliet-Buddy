@@ -28,8 +28,7 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+html {
     height: 100%;
     /* background-color: rgb(155, 155, 155); */
     background-image: url(../jpg/japan_toilet.jpg);
@@ -44,6 +43,7 @@ body {
     justify-content: center;
     color: rgb(255, 255, 255);
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    background-image: url(../jpg/japan_toilet.jpg);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
