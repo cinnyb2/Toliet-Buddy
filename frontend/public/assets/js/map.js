@@ -60,7 +60,7 @@ function initMap() {
     styles: myStyles,
   });
 
-  fetch('https://35.203.34.201:8080/locations')
+  fetch('http://35.203.34.201:8080/locations')
     .then((res) => res.json())
     .then((data) => {
       for (let i = 0; i < Object.keys(data).length; i++) {
