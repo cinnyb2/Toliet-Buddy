@@ -40,12 +40,65 @@
             .card-title {
                 margin-bottom: 20px;
             }
+
+            .navbar-nav .nav-item:hover {
+                background-color: rgba(180, 190, 203, 0.4);
+            }
+
+            img {
+                width: 8%;
+                height: auto;
+                position: relative;
+                left: 0;
+            }
+
+            #navbarNav {
+                width: 30%;
+            }
         </style>
     </head>
 
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./index.html">
+                <img
+                    style="width: 8%"
+                    src="./assets/png/Logo-white.png"
+                    alt=""
+                />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-sm-auto gap-2">
+                    <li class="nav-item rounded">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="./message.html"
+                            >Toilets near me</a
+                        >
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="./submit.html"
+                            ><i class="bi bi-people-fill me-2"></i>Review a
+                            toilet</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <header>
-            <h1 style="text-align: center">See all reviews</h1>
+            <h1 style="text-align: center; padding-top: 5%">See all reviews</h1>
         </header>
         <div id="CardTemplate">
             <h2 class="card-title"></h2>
