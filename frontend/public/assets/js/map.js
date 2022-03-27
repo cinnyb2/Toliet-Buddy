@@ -1,7 +1,7 @@
 // Initialize and add the map
 
 let map; // global map variable
-var gmarkers = []; // store marker variables
+
 
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
@@ -14,12 +14,12 @@ function addMarker(lat, lng, title, description) {
     icon: markerIcon,
   });
 
-  // Save markers for sidebar later
-  gmarkers.push(marker);
+  const contentString =
+  '<b>' + title + '</b><br>' + description;
+
 
   let infowindow = new google.maps.InfoWindow({
-    content: 'Testing a messageaj s;ldfj a;ldskfj a;lskdjf;lsajf ;lsakdj',
-    maxWidth: 150,
+    content: contentString,
   });
 
   marker.addListener('click', () => {
@@ -66,7 +66,7 @@ function initMap() {
       for (let i = 0; i < Object.keys(data).length; i++) {
         loc = data[i];
         console.log(loc);
-        addMarker(loc[0], loc[1], loc[2]);
+        addMarker(loc[0], loc[1], loc[2], loc[3]);
       }
     });
 }

@@ -9,6 +9,6 @@ This repository contains the frontend and the backend for Toilet Buddy.
 
 # Project Setup (frontend)
 
-After cloning the repository. cd into the frontend and enter the line below.
+After cloning the repository. cd into the frontend and enter the line below to host the site locally.
 
 `npm run serve `

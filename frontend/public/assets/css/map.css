@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 body {
@@ -22,6 +23,9 @@ img {
   height: auto;
 }
 
+#navbarNav {
+  width: 30%;
+}
 .navbar-brand {
   display: inline-block;
 }
