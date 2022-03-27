@@ -11,11 +11,11 @@ function displayCards(collection) {
                     newcard.querySelector(".card-title").innerHTML =
                         doc.data().reviewTitle;
                     newcard.querySelector(".card-location").innerHTML =
-                        "<b>Location:</b> " + doc.data().location;
+                        "<b>Location: </b> " + doc.data().location;
                     newcard.querySelector(".card-rating").innerHTML =
-                        "<b>Ratings:</b>" + doc.data().rating;
+                        "<b>Ratings: </b>" + doc.data().rating;
                     newcard.querySelector(".card-content").innerHTML =
-                        "<b>Content:</b> " + doc.data().reviewContent;
+                        "<b>Content: </b> " + doc.data().reviewContent;
                     newcard.querySelector(".card-sentiment").innerHTML =
                         "<b>Sentiment Analysis:</b> " +
                         doc.data().sentiment[1] +
