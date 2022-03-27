@@ -76,7 +76,7 @@ async def submit_details(
         "sentiment": get_sentiment(text),
     }
 
-    db.collection("reviews").add(review_data)
+    db.collection("restrooms").add(review_data)
 
 
 @app.post("/send_verification")

@@ -1,5 +1,6 @@
 from google.cloud import language_v1
 from google.oauth2 import service_account
+from gcp_creds import get_creds
 
 
 def get_sentiment(review: str) -> str:
