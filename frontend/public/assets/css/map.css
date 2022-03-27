@@ -12,3 +12,20 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+
+img {
+  width: 8%;
+  height: auto;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+}
