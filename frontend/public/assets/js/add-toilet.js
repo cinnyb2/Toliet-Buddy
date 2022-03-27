@@ -1,7 +1,7 @@
 const BASE_URL = 'http://127.0.0.1:8000/form_submit?';
 
 const title = document.getElementById('title').value;
-const ratings = document.getElementById('ratings').value;
+const ratings = document.getElementById('rating').value;
 const location = document.getElementById('location').value;
 const review = document.getElementById('review').value;
 
