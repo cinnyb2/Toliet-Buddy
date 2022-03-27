@@ -1,21 +1,18 @@
 // Initialize and add the map
 
-let map; // global map variable 
+let map; // global map variable
 var gmarkers = []; // store marker variables
-
 
 // Assigning infoWindow to markers
 function addInfoWindow(marker, message) {
   var infoWindow = new google.maps.InfoWindow({
-    content: message
+    content: message,
   });
 
-  google.maps.event.addListener(marker, 'click', function() {
+  google.maps.event.addListener(marker, 'click', function () {
     infoWindow.open(map, marker);
   });
 }
-
-
 
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
@@ -25,26 +22,18 @@ function addMarker(lat, lng, title, description) {
   let marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
-    icon: markerIcon
+    icon: markerIcon,
   });
 
   // Save markers for sidebar later
   gmarkers.push(marker);
 
   let info_window = new google.maps.InfoWindow({
-    content: "test"
+    content: 'test',
   });
 
-  google.maps.event.addListener(marker, 'click', function() {
-
-  });
-
-
-
-  }
-
-
-
+  google.maps.event.addListener(marker, 'click', function () {});
+}
 
 // INITIALIZE MAP //
 
@@ -75,6 +64,13 @@ function initMap() {
     styles: myStyles,
   });
 
-  addMarker(37.7882589, -122.4104123, 'Market/Powell');
-
+  fetch('http://127.0.0.1:8000/locations')
+    .then((res) => res.json())
+    .then((data) => {
+      for (let i = 0; i < Object.keys(data).length; i++) {
+        loc = data[i];
+        console.log(loc);
+        addMarker(loc[0], loc[1], loc[2]);
+      }
+    });
 }

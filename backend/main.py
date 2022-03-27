@@ -1,12 +1,23 @@
-from fastapi import FastAPI
 import firebase_admin
 from firebase_admin import credentials, firestore
 from gcp_creds import get_creds
-from google.cloud import language_v1
-from google.oauth2 import service_account
+from google_nlp import get_sentiment
 from twilio_api import *
 
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+
 app = FastAPI()
+
+origins = ["http://localhost:5000"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
@@ -20,7 +31,9 @@ async def get_locations():
     creds_json = get_creds(local=True)
 
     creds = credentials.Certificate(creds_json)
-    app = firebase_admin.initialize_app(creds)
+
+    if not firebase_admin._apps:
+        app = firebase_admin.initialize_app(creds)
 
     db = firestore.client()
 
@@ -29,39 +42,13 @@ async def get_locations():
     loc_dicts = {}
     for idx, doc in enumerate(docs):
         doc_info = doc.to_dict()
-        loc_dicts[idx] = [doc_info["latitude"], doc_info["longitude"]]
+        loc_dicts[idx] = [
+            doc_info["latitude"],
+            doc_info["longitude"],
+            doc_info["location"],
+        ]
 
     return loc_dicts
-
-
-@app.get("/sentiment")
-async def get_sentiment(review: str) -> str:
-
-    creds_json = get_creds(local=True)
-
-    creds = service_account.Credentials.from_service_account_info(creds_json)
-
-    client = language_v1.LanguageServiceClient(credentials=creds)
-
-    document = language_v1.Document(
-        content=review, type_=language_v1.Document.Type.PLAIN_TEXT
-    )
-
-    sentiment = client.analyze_sentiment(
-        request={"document": document}
-    ).document_sentiment
-
-    score = round(sentiment.score, 3)
-
-    if score >= 0.25 <= 1.0:
-        mood = "positive 😀"
-
-    elif score >= -0.25 < 0.25:
-        mood = "neutral 😐"
-    else:
-        mood = "negative 😡"
-
-    return {mood, score}
 
 
 @app.post("/form_submit")
@@ -75,7 +62,9 @@ async def submit_details(
     creds_json = get_creds(local=True)
 
     creds = credentials.Certificate(creds_json)
-    app = firebase_admin.initialize_app(creds)
+
+    if not firebase_admin._apps:
+        app = firebase_admin.initialize_app(creds)
 
     db = firestore.client()
 
