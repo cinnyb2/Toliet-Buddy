@@ -3,6 +3,7 @@ from firebase_admin import credentials, firestore
 from gcp_creds import get_creds
 from google_nlp import get_sentiment
 from twilio_api import *
+import googlemaps
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,6 +19,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def get_lat_long(address: str):
+    gmaps = googlemaps.Client(key="AIzaSyBB8bR22FPAkaeDEwexa1JXOX86zKFqPpo")
+
+    geocode_result = gmaps.geocode(address)
+
+    return geocode_result
 
 
 @app.get("/")
@@ -69,10 +78,15 @@ async def submit_details(
 
     db = firestore.client()
 
+    lat_lng = get_lat_long(location)[0]["geometry"]["location"]
+    lat, lng = lat_lng["lat"], lat_lng["lng"]
+
     review_data = {
         "location": location,
+        "latitude": lat,
+        "longitude": lng,
         "reviewTitle": title,
-        "reviewContent": text,
+        "remarks": text,
         "rating": rating,
         "sentiment": get_sentiment(text),
     }

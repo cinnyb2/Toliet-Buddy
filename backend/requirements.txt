@@ -4,3 +4,4 @@ google-cloud-language==2.4.1
 python-dotenv==0.20.0
 firebase-admin==5.2.0
 fastapi==0.75.0
+googlemaps==4.6.0
