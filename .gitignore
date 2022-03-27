@@ -12,6 +12,7 @@ firebase-debug.*.log*
 
 # Firebase config
 /scripts/firebaseAPI.js
+/frontend/public/assets/js/firebaseAPI.js
 
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
