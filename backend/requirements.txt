@@ -3,3 +3,5 @@ google-auth==2.6.0
 google-cloud-language==2.4.1
 python-dotenv==0.20.0
 Pyrebase==3.0.27
+firebase-admin==5.2.0
+fastapi==0.75.0

@@ -4,6 +4,7 @@ from firebase_admin import credentials, firestore
 from gcp_creds import get_creds
 from google.cloud import language_v1
 from google.oauth2 import service_account
+from twilio_api import *
 
 app = FastAPI()
 
@@ -34,7 +35,7 @@ async def get_locations():
 
 
 @app.get("/sentiment")
-async def get_sentiment(review: str = "I hated this toilet") -> str:
+async def get_sentiment(review: str) -> str:
 
     creds_json = get_creds(local=True)
 
@@ -53,16 +54,66 @@ async def get_sentiment(review: str = "I hated this toilet") -> str:
     score = round(sentiment.score, 3)
 
     if score >= 0.25 <= 1.0:
-        response = "Your review of the bathroom is positive 😀"
+        mood = "positive 😀"
 
     elif score >= -0.25 < 0.25:
-        response = "Your review of the bathroom is neutral 😐"
+        mood = "neutral 😐"
     else:
-        response = "Your review of the bathroom is negative 😡"
+        mood = "negative 😡"
 
-    return {response, score}
+    return {mood, score}
 
 
 @app.post("/form_submit")
-async def submit_details():
-    pass
+async def submit_details(
+    location,
+    title,
+    text,
+    rating,
+):
+
+    creds_json = get_creds(local=True)
+
+    creds = credentials.Certificate(creds_json)
+    app = firebase_admin.initialize_app(creds)
+
+    db = firestore.client()
+
+    review_data = {
+        "location": location,
+        "reviewTitle": title,
+        "reviewContent": text,
+        "rating": rating,
+        "sentiment": get_sentiment(text),
+    }
+
+    db.collection("reviews").add(review_data)
+
+
+@app.post("/send_verification")
+async def send_verification(to_phone: str):
+
+    client = init_twilio()
+
+    send_ver_code(client, to_phone)
+
+    return client
+
+
+@app.post("/verify_code")
+async def verify_code(client, code: str, to_phone: str):
+
+    res = verify_code(client, to_phone, code)
+
+    if res == "approved":
+        return "phone approved!"
+    else:
+        return "code not approved"
+
+
+@app.post("/send_message")
+async def send_message(to_phone, name, message):
+
+    message = f" Hey {name}! Nature calls? There are 10 toilets within 100m from your location!"
+
+    send_message(to_phone, message)

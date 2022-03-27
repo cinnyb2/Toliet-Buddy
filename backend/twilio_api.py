@@ -1,7 +1,6 @@
 # Download the helper library from https://www.twilio.com/docs/python/install
 import os
 from twilio.rest import Client
-import streamlit as st
 from dotenv import load_dotenv
 
 
@@ -33,25 +32,25 @@ def create_service(client):
     return service["sid"]
 
 
-def send_ver_code(client, service_sid, user_name: str, to_phone: str):
+def send_ver_code(client, to_phone: str):
     """send verification code to user to verify phone number"""
 
     try:
         # send code to user
-        verification = client.verify.services(service_sid).verifications.create(
-            to=to_phone, channel="sms"
-        )
+        verification = client.verify.services(
+            "VAce3d3e2ffabb9ecf83e420bbb57b0c18"
+        ).verifications.create(to=to_phone, channel="sms")
     except Exception as err:
         print(f"Exception caught: {err}")
 
 
-def verify_code(client, service_sid: str, code: str) -> bool:
+def verify_code(client, to_phone: str, code: str) -> bool:
     """verify code sent to user"""
 
     try:
         verification_check = client.verify.services(
-            service_sid
-        ).verification_checks.create(to="+15017122661", code=code)
+            "VAce3d3e2ffabb9ecf83e420bbb57b0c18"
+        ).verification_checks.create(to=to_phone, code=code)
     except Exception as err:
         print(f"Exception caught: {err}")
 
@@ -80,15 +79,14 @@ def main():
     message = "There are 10 toilets nearby! The closest one is ..."
 
     client = init_twilio()
-    service_sid = create_service(client)
 
-    send_ver_code(client, service_sid, to_phone)
+    send_ver_code(client, to_phone)
 
     # await user input of code
     code = 123456
 
     # callback function awaiting user input
-    res = verify_code(client, service_sid, code)
+    res = verify_code(client, code)
 
     if res == "approved":
         send_message(to_phone, message)
