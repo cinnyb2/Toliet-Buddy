@@ -10,6 +10,8 @@ function displayCards(collection) {
                     newcard.id = "preview";
                     newcard.querySelector(".card-title").innerHTML =
                         doc.data().reviewTitle;
+                    newcard.querySelector(".card-image").src =
+                        "./assets/png/Logo-black.png";
                     newcard.querySelector(".card-location").innerHTML =
                         "<b>Location: </b> " + doc.data().location;
                     newcard.querySelector(".card-rating").innerHTML =
