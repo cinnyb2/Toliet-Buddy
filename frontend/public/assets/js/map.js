@@ -57,10 +57,10 @@ var myStyles = [
 ];
 
 const SAN_FRANCISCO_BOUNDS = {
-  north: 37.84,
-  south: 37.71,
-  west: -122.52,
-  east: -122.35,
+  north: 37.87,
+  south: 37.66,
+  west: -122.72,
+  east: -122.21,
 };
 const SAN_FRANCISCO = { lat: 37.76, lng: -122.45 };
 
