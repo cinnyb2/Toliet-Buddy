@@ -1,6 +1,46 @@
 #map {
-    height: 400px;
-    /* The height is 400 pixels */
+    height: 100%;
     width: 100%;
     /* The width is the width of the web page */
   }
+
+.container {
+  padding-top: 3%;
+    text-align: center;
+    width: 80%;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+
+.header {
+  z-index: 1;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  left: -60px;
+  position: relative;
+}
+
+#toilet-button {
+  text-align: center;
+  background-color: #236B8E;
+    border: none;
+      color: white;
+        padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+}
+
+.button-container {
+  text-align: center;
+}

@@ -1,11 +1,12 @@
 {
   "name": "OhShit",
-
   "scripts": {
     "serve": "firebase emulators:start",
     "deploy": "firebase deploy"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.13.10",
+    "dotenv": "^16.0.0",
     "firebase": "^9.6.10"
   }
 }
