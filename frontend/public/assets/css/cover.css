@@ -31,7 +31,8 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: rgb(0, 39, 145);
+    /* background-color: rgb(155, 155, 155); */
+    background-image: url(../jpg/japan_toilet.jpg);
 }
 
 body {
