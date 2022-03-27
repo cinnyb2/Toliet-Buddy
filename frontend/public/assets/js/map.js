@@ -2,7 +2,6 @@
 
 let map; // global map variable
 
-
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
   var myLatlng = new google.maps.LatLng(lat, lng);
@@ -14,9 +13,7 @@ function addMarker(lat, lng, title, description) {
     icon: markerIcon,
   });
 
-  const contentString =
-  '<b>' + title + '</b><br>' + description;
-
+  const contentString = '<b>' + title + '</b><br>' + description;
 
   let infowindow = new google.maps.InfoWindow({
     content: contentString,
