@@ -1,16 +1,15 @@
 #map {
-    height: 100%;
-    width: 100%;
-    /* The width is the width of the web page */
-  }
+  height: 100%;
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
 .container {
   padding-top: 3%;
-    text-align: center;
-    width: 80%;
-    opacity: 0.6;
-    z-index: -1;
-
+  text-align: center;
+  width: 80%;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .header {
@@ -21,7 +20,7 @@
 }
 
 img {
-  width: 40%;
+  width: 35%;
   height: auto;
   left: -60px;
   position: relative;
@@ -29,16 +28,17 @@ img {
 
 #toilet-button {
   text-align: center;
-  background-color: #236B8E;
-    border: none;
-      color: white;
-        padding: 15px 32px;
+  background-color: #236b8e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 36px;
-    cursor: pointer;
-    /* text-transform: uppercase; */
+  cursor: pointer;
+  border-radius: 20px;
+  /* text-transform: uppercase; */
 }
 
 .button-container {
