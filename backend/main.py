@@ -111,8 +111,8 @@ async def verify_code(client, code: str, to_phone: str):
         return "code not approved"
 
 
-@app.post("/send_message")
-async def send_message(to_phone, name, message):
+@app.post("/send_mes")
+async def send_mes(to_phone, name, message):
 
     message = f" Hey {name}! Nature calls? There are 10 toilets within 100m from your location!"
 
