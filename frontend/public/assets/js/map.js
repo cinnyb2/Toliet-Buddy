@@ -4,6 +4,17 @@ let map; // global map variable
 var gmarkers = []; // store marker variables
 
 
+// Assigning infoWindow to markers
+function addInfoWindow(marker, message) {
+  var infoWindow = new google.maps.InfoWindow({
+    content: message
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.open(map, marker);
+  }
+}
+
 
 function addMarker(lat, lng, title, description) {
   // var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
@@ -17,16 +28,12 @@ function addMarker(lat, lng, title, description) {
     icon: markerIcon
   });
 
+
+
   // Save markers for sidebar later
   gmarkers.push(marker);
 
-  google.maps.event.addListener(marker, 'click', function(){
-    return
-  });
-
   }
-
-
 
 
 // INITIALIZE MAP //
